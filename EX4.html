@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(102, 86, 109);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 90%;
+        }
+        .album {
+            display: flex;
+            width: 220px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 195px;
+            transition: color 0.3s ease;
+        }
+        .album img{
+            width: 100%;
+            transform: scale(1.05);
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.356);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .album p {
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(34, 0, 66);
+            font-family:'Courier New', Courier, monospace
+        }
+        .album:hover img {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 15px rgb(255, 255, 255);
+        }
+        .album:hover p {
+            color: #d389cd; 
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .album {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/BRGNK790FIRTNW3ebO5rhAEMcAAg7FGZmTGpuXLj2laeYqhdbdLD8Fy-ppSjvDsQkEwXgo5n83ZnT8om"
+            >
+            <p>Holding Out For A Hero</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/VVXOoO6K2zR99bS5RITZi4BVK2unQ1ZQEB-Wc716fIthMuVLbao9NI7jZ1rJC8cGDaB2Jp1KUcuMGPY">
+            <p>Defying Gravity</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/VBrxOTiD0BAuuJ2xkj2JRSWrKWSCNdq40ixGLrlM-tIqwfpb2iqSIo-TkGY7b_9MWzyUAVIlnBdYRp4">
+            <p>All Star</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/_c1AGdy0dI4BARclheWFqSgg_2JZVR5MuMJbUBdvdj653TQprhbw9qJ3wTaFztKoURGf1WHU4_BEmhOiDA">
+            <p>Tongues and Teeth</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/hJSnvBUkeuZCl4waBW-KB_IP1nE94V5X2w7lWUlHzVBob33Pp40dJL6TVJ75aruHP-ayLs455ECqg2HT">
+            <p>Poison</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/eYaH5XrPl7QGWXG2iv8Mlp-ivYpm3wIc_73j6W8-Uil1t2ii1KsADR-0l6DiScM0GrbROjJpEQwIwOhw0Q">
+            <p>Lay All Your Love On Me</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/kJoIMr2nr48sPY8o3lBurATYcXvybKK9A5mmJ02LRHa4Q3MdUtYOhekMnW__PaHQTFiUe7S-zw7r2XpnLg">
+            <p>The Moon Will Sing</p>
+                </div>
+        <div class="album">
+            <img src="https://lh3.googleusercontent.com/CAVdXRr3t3o9QD13RGCjdgUidDVOKyUBKJwrYBwCjEfTz51lQPSkUhnNHY6Cl_BS9eL4XWt9gU3l1fez">
+            <p>La Seine</p>
+                </div>
+</body>
+</html>

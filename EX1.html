@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(240, 120, 107), rgb(116, 3, 46, 0.747));
+        }
+        .Pai{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: rgb(216, 21, 96);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 20px 20px 50px 50px;
+            border: solid 3px;
+        }
+        #Perfil{
+            text-align: center;
+        }
+        #Start{
+            border-radius: 60%;
+            border: solid 7px;
+            transition: border-color 0.5s;
+        }
+        #Start:hover{
+            border-color: salmon;
+        }
+        h3{
+            background-color: rgba(0, 0, 0, 0.808) ;
+            color: rgb(216, 21, 96);
+            padding: 30px;
+            margin: 30px 20px 20px 20px;
+            border-radius: 7%;
+            border: solid 3px;
+            text-align: center;
+            margin: 5%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #Top{
+            text-align: center;
+            margin: 5%;
+            color: rgb(216, 21, 96);
+            border: solid 3px;
+            background-color: rgba(0, 0, 0, 0.678);
+
+        }
+        #Musicas{
+            background-color: rgb(0, 0, 0, 0.678);
+            margin: 5%;
+            color: rgb(216, 21, 96);
+            border: solid 3px;
+            border-radius: 5%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:x-large;          
+            list-style: none;
+        }
+        #Music{
+            border: solid 2px;
+            margin-right: 20px;
+        }
+        .texto {
+            position: relative;
+            top: -45px;   
+        }
+        li{
+            padding: 12px;
+        }
+        #Curiosidades { 
+            background-color: rgba(0, 0, 0, 0.678);
+            color: rgb(216, 21, 96);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: normal;
+            margin: 5%;
+            font-size: large;
+            border: solid 2PX;
+            height: 290px;
+        }
+        #Foo {
+                background-color: rgb(100, 36, 61);
+                margin: 15px;
+                font-size: 20px;
+                width: 300px;
+                transition: background-color 0.5s;
+            }
+
+            #Foo:hover {
+                background-color: rgb(248, 148, 206);
+            }
+            .Fuu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            #LinkMusic {
+                color: rgba(255, 0, 64, 0.719);
+            }
+            footer{
+                color: rgb(61, 5, 12);
+                font-style: italic;
+                margin: 40px;
+            }
+            #Logo{
+                width: 300px;
+                height: 300px;
+                display: block;
+                margin: auto;
+                border-radius: 10%;
+                border: salmon solid;
+                transition: border-color 0,5s;
+            }
+            blockquote{
+                font-style: italic;
+                color: #700774;
+                border-left: 10%;
+                padding-left: 15px;
+                margin: 30px;
+                text-align: center;
+                font-size: x-large;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="Pai">
+        <h1>annapantsu</h1>
+    <div id="Perfil">
+        <img src="https://images.genius.com/62af43b2a01492d4d3e09d40f3ac6e25.512x512x1.jpg" id="Start"> 
+    </div>
+    <h3>Talented singer, voice actress, and content creator. <br>
+    A versatile voice that spans multiple genres. <br>
+    Her engaging performances breathe new life into popular songs from musicals, anime, video games, and more.</h3>
+
+    <h2 id="Top">Top músicas</h2>
+
+    <ol id="Musicas">
+        <li><img src="https://lh3.googleusercontent.com/BRGNK790FIRTNW3ebO5rhAEMcAAg7FGZmTGpuXLj2laeYqhdbdLD8Fy-ppSjvDsQkEwXgo5n83ZnT8om" width="100" height="100" id="Music"><span class="texto">Holding Out For A Hero (from Shrek 2)</span></li>
+        <li><img src="https://lh3.googleusercontent.com/VVXOoO6K2zR99bS5RITZi4BVK2unQ1ZQEB-Wc716fIthMuVLbao9NI7jZ1rJC8cGDaB2Jp1KUcuMGPY" width="100" height="100"  id="Music"><span class="texto">Defying Gravity (from Wicked)</span></li>
+        <li><img src="https://lh3.googleusercontent.com/VBrxOTiD0BAuuJ2xkj2JRSWrKWSCNdq40ixGLrlM-tIqwfpb2iqSIo-TkGY7b_9MWzyUAVIlnBdYRp4" width="100" height="100"  id="Music"><span class="texto">Star but acoustic (from Shrek)</span></li>
+    </ol>
+
+    <blockquote>"I'm holding out for a hero 'til the morning light"</blockquote>
+
+        <div class="Fuu">
+    <button id="Foo"><a href="https://www.youtube.com/watch?v=CN7JSoGLaJE" target="_blank" id="LinkMusic">Ouvir agora</a></button>
+        </div>
+
+    <h2 id="Top">Curiosidades</h2>
+
+    <ul id="Curiosidades">
+        <li>Anna collaborated with multiple games & studios such as:
+            <ul>
+                <li>Baldurs Gate (Larian Studios)</li>
+                <li>Magic: The Gathering (Wizards Of The Coast)</li>
+                <li>Dressed To Impress (Roblox)</li>
+            </ul>
+        </li>
+        <li>Annapantsu also livestreams frequently, interacting with fans and singing songs live.</li>
+        <li>She also does work in voice acting.</li>
+            </ul>
+
+        <img src="https://images.genius.com/62af43b2a01492d4d3e09d40f3ac6e25.512x512x1.jpg" id="Logo">
+
+    <footer>Bárbara Caryne Mertens / 1°C / Sistemas de informação</footer>
+    </div>
+</body>
+</html>

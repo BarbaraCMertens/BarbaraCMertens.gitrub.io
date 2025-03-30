@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+.intro .elementos{
+    flex-direction: column;
+}
+.intro {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+    text-align: center;
+}
+.elementos {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.elementos h2 {
+    font-size: 2em;
+    color: #1e1e1e;
+}
+
+.elementos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.elementos ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+@media (max-width:2044px) {
+    body{
+        background-color: rgb(88, 0, 129);
+    }
+    header h1 {
+        font-size: 2.1em;
+    }
+
+    .intro p, .elementos ul li {
+        font-size: 1.6em;
+    }
+
+    .elementos h2 {
+        font-size: 2em;
+    }
+    a button{
+        background-color: rgb(82, 5, 97);
+        border: solid 1px rgb(148, 35, 192);
+        color: rgb(210, 134, 240);
+    }
+}
+@media (max-width:  900px) {
+    body{
+        background-color: rgb(21, 21, 131);
+    }
+    header h1 {
+        font-size: 2em;
+    }
+
+    .intro p, .elementos ul li {
+        font-size: 1em;
+    }
+
+    .elementos h2 {
+        font-size: 1.8em;
+    }
+    a button{
+        background-color: rgb(21, 19, 126);
+        border: solid 1px rgb(0, 68, 255);
+        color: rgb(116, 119, 255);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: orange;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .intro p, .elementos ul li {
+        font-size: 0.9em;
+    }
+
+    .elementos h2 {
+        font-size: 1.5em;
+    }
+    a button{
+        background-color: rgb(219, 186, 38);
+        border: solid 1px gold;
+        color: coral;
+    }
+    @media (max-width: 601px) {
+            .Guitarra {
+                display: none;
+            }
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rock</h1>
+    </header>
+
+    <section class="intro">
+        <p>O rock é um gênero musical que surgiu na década de 1950, nos Estados Unidos, e se espalhou rapidamente pelo mundo.</p>
+        <p>Com uma mistura de blues, rhythm and blues e country, o rock se tornou um dos estilos mais populares e influentes, com várias subculturas e subgêneros.</p>
+    </section>
+
+    <section class="elementos">
+        <h2>Elementos do Rock</h2>
+        <ul>
+            <li>Guitarras elétricas</li>
+            <li>Bateria e baixo marcantes</li>
+            <li>Vocal potente</li>
+            <li>Atitude rebelde</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=4N1iwQxiHrs&list=PLGBuKfnErZlDbjq8T1TA4mHjIaLf77iBO"><button>PlayList 80s</button></a>
+        <img src="data:image/png;base64,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" class="Guitarra">
+    </section>
+</body>
+</html>

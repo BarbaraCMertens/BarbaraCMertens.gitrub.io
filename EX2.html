@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomWeb</title>
+    <style>
+        .Fuu{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        #Foo{
+            background-color: rgb(169, 154, 223);
+            font-size: 25px;
+            margin: 15%;
+            padding: 5%;
+            transition: background-color 0.5s;
+            border: solid 2px ;
+            transition: background-color 0.7s, border-color 0.5s;
+            box-shadow: 4px 4px 9px;
+        }
+        #Foo:hover {
+                background-color: salmon;
+                transform: scale(1.05);
+            }
+        #Foo:active{
+                border-color: rgb(255, 0, 179);
+            }
+        #LinkMusic{
+            color: rgb(255, 210, 155);
+        }
+    </style>
+</head>
+<body>
+    <div class="Fuu">
+        <button id="Foo"><a href="https://www.youtube.com/watch?v=CN7JSoGLaJE" id="LinkMusic">Ouvir agora</a></button>
+    </div>
+</body>
+</html>
